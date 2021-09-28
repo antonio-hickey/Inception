@@ -1,6 +1,6 @@
 ## How to change the name of the welcome message:
 
-![example gif]("https://github.com/antonio-hickey/Inception/blob/main/assets/images/Doc%20Gifs/editName.gif?raw=true")
+![example gif]("https://github.com/antonio-hickey/Inception/blob/main/assets/images/Doc%20Gifs/editName.gif")
 
 #### This one is easy !
 1. Open the `index.html` file.
@@ -14,5 +14,5 @@
 2. If you're just replacing the name make sure line `22` is:
    `<h1 class="title">Welcome YOUR NAME!</h1>`
 3. If none of the above worked, open an issue [here](https://github.com/antonio-hickey/Inception/issues/new)
-   and I will assist you with the issue 😄.
+   and I will assist you with the issue.
 
