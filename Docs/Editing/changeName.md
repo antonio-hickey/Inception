@@ -1,6 +1,6 @@
 ## How to change the name of the welcome message:
 
-![]("https://github.com/antonio-hickey/Inception/blob/main/assets/images/Doc%20Gifs/editName.gif")
+![](https://github.com/antonio-hickey/Inception/blob/main/assets/images/Doc%20Gifs/editName.gif)
 
 #### This one is easy !
 1. Open the `index.html` file.
