@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+		<title>Inception</title>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+		<script src="scripts/transitions.js"></script>
+    <script src="scripts/datetime.js"></script>
+  </head>
+
+  <body>
+    <!-- Fade Effect -->
+    <svg id="fade"></svg>
+      <script>fadeInPage();</script>
+
+    <!-- Main Display -->
+    <div id="main">
+      <img id="art" src="assets/images/default.png">
+      <div id="content">
+        <h1 class="title">Welcome Antonio!</h1>
+        
+        <div id="datetime">
+          <!-- Why not move this into scripts? -->
+          <script type="text/javascript">
+						setInterval(fetchDate, 1000);
+						fetchDate();
+					</script>
+        </div>
+        
+        <!-- Search Bar -->
+        <div id="search">
+          <form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+            <label for="s" >></label>
+						<input autofocus id="s" name="s" type="search" placeholder="Search the web...">
+					</form>
+        </div>
+
+        <!-- Links -->
+        <div id=links>
+					<ul>
+						<a class="subtitle">Frequent</a>
+							<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+              <li><a href="https://mail.google.com/mail/u/0/#inbox/" target="_blank">gMail</a></li>
+							<li><a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
+					</ul>
+					<ul>
+						<a class="subtitle">Media</a>
+              <li><a href="https://soundcloud.com/discover" target="_blank">Soundcloud</a></li>
+							<li><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></li>
+							<li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+					</ul>
+					<ul>
+						<a class="subtitle">Social medias</a>
+              <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+							<li><a href="https://twitter.com/home" target="_blank">Twitter</a></li>
+              <li><a href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+					</ul>
+					<ul>
+						<a class="subtitle">Research</a>
+              <li><a href="https://fred.stlouisfed.org/" target="_blank">FRED</a></li>
+							<li><a href="https://www.jmlr.org/" target="_blank">ML Papers</a></li>
+							<li><a href="https://www.cdc.gov/coronavirus/2019-ncov/science/science-and-research.html" target="_blank">COVID-19</a></li>
+					</ul>
+					<ul>
+						<a class="subtitle">Others</a>
+              <li><a href="https://www.tradingview.com/" target="_blank">TradingView</a></li>
+							<li><a href="http://localhost:3000/" target="_blank">Local Host</a></li>
+							<li><a href="https://www.cbssports.com/fantasy/" target="_blank">Fantasy Football</a></li>
+					</ul>
+				</div>
+
+        <!-- Music Streaming -->
+        <div id="music">
+          <!-- Change data-video with the youtube video query you want -->
+          <div data-video="DWcJFNfaw9c" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
+          <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+          <script src="scripts/ytMusic.js"></script>
+          <script type="text/javascript">
+            onYouTubeIframeAPIReady();
+          </script>
+        </div>
+
+      </div>
+     </div>
+
+     <!-- Footer -->
+     <div class="footer">
+       <p id="credits">
+         <a href="https://www.deviantart.com/sc4v3ng3r" target="_blank">Art by SC4V3NG3R</a>
+       </p>
+       <div class="contacts">
+         <p>
+           <a href="https://github.com/antonio-hickey/Inception" target="_blank">GitHub Repo</a> |
+           <span id="theme-toggle" class="theme-toggle">Toggle Themes</span>
+         </p>
+       </div>
+     </div>
+     <script src="scripts/toggleThemes.js"></script>
+  </body>
+</html>
