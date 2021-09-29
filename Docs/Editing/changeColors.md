@@ -10,5 +10,4 @@
 ### If that did not work:
 1. Make sure your running your own version of Inception locally the url should point to the file saved on your local machine.
 2. Make sure your colors include a `#` at the start
-3. Make sure the file path you're providing to `src` is wrapped in `"`'s
-4. If none of the above worked, open an issue [here](https://github.com/antonio-hickey/Inception/issues/new) and I will assist you with the issue.
+3. If none of the above worked, open an issue [here](https://github.com/antonio-hickey/Inception/issues/new) and I will assist you with the issue.
