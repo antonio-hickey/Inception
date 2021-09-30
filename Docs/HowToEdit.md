@@ -1,4 +1,4 @@
-# How to modify for your own fit.
+# How to modify Inception for your own fit.
 
 ### Things you should change:
 - How to change name on welcome message [see here](https://github.com/antonio-hickey/Inception/blob/main/Docs/Editing/changeName.md)
