@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="utf-8">
 		<title>Inception</title>
-		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 		<script src="scripts/transitions.js"></script>
     <script src="scripts/datetime.js"></script>
   </head>
@@ -22,7 +21,6 @@
         <h1 class="title">Welcome Antonio!</h1>
         
         <div id="datetime">
-          <!-- Why not move this into scripts? -->
           <script type="text/javascript">
 						setInterval(fetchDate, 1000);
 						fetchDate();
@@ -31,17 +29,18 @@
         
         <!-- Search Bar -->
         <div id="search">
-          <form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+          <form>
             <label for="s" >></label>
-						<input autofocus id="s" name="s" type="search" placeholder="Search the web...">
-					</form>
+					  <input autofocus id="s" name="s" type="search" placeholder="Search the web...">
+            <script src="scripts/searchEngine.js"></script>
+          </form>
         </div>
 
         <!-- Links -->
         <div id=links>
 					<ul>
 						<a class="subtitle">Frequent</a>
-							<li><a href="https://github.com/" target="_blank">GitHub</a></li>
+						  <li><a href="https://github.com/" target="_blank">GitHub</a></li>	
               <li><a href="https://mail.google.com/mail/u/0/#inbox/" target="_blank">gMail</a></li>
 							<li><a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
 					</ul>
@@ -81,22 +80,21 @@
             onYouTubeIframeAPIReady();
           </script>
         </div>
-
       </div>
-     </div>
+    </div>
 
-     <!-- Footer -->
-     <div class="footer">
-       <p id="credits">
-         <a href="https://www.deviantart.com/sc4v3ng3r" target="_blank">Art by SC4V3NG3R</a>
-       </p>
-       <div class="contacts">
-         <p>
-           <a href="https://github.com/antonio-hickey/Inception" target="_blank">GitHub Repo</a> |
-           <span id="theme-toggle" class="theme-toggle">Toggle Themes</span>
-         </p>
-       </div>
-     </div>
-     <script src="scripts/toggleThemes.js"></script>
+    <!-- Footer -->
+    <div class="footer">
+      <p id="credits">
+        <a href="https://www.deviantart.com/sc4v3ng3r" target="_blank">Art by SC4V3NG3R</a>
+      </p>
+      <div class="contacts">
+        <p>
+          <a href="https://github.com/antonio-hickey/Inception" target="_blank">GitHub Repo</a> |
+          <span id="theme-toggle" class="theme-toggle">Toggle Themes</span>
+        </p>
+      </div>
+    </div>
+    <script src="scripts/toggleThemes.js"></script>
   </body>
 </html>
