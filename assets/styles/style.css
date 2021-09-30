@@ -59,6 +59,10 @@ form input[type="search"] {
 	transition: all 0.2s;
 }	
 
+input:focus {
+  outline: none;
+}
+
 form label {
 	color: var(--color3);
 	position: absolute;
@@ -154,23 +158,23 @@ a {
 }
 
 @keyframes fade-out {
-    from { opacity: 1 }
-      to { opacity: 0 }
+  from { opacity: 1 }
+  to { opacity: 0 }
 }
 
 @keyframes fade-in {
-    from { opacity: 0 }
-      to { opacity: 1 }
+  from { opacity: 0 }
+  to { opacity: 1 }
 }
 
 #fade.fade-out {
-    opacity: 0;
-    animation-name: fade-out;
+  opacity: 0;
+  animation-name: fade-out;
 }
 
 #fade.fade-in {
-    opacity: 1;
-    animation-name: fade-in;
+  opacity: 1;
+  animation-name: fade-in;
 }
 
 @media (max-width: 980px) {
