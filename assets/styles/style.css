@@ -1,7 +1,7 @@
 :root {
-	--red: #9461c9;
-	--white: #b2dae7;
-	--yellow: #bd846b;
+	--color1: #9461c9;
+	--color2: #b2dae7;
+	--color3: #bd846b;
 
 	--bg: #282828;
 	--fg: #3f3f3f;
@@ -10,9 +10,9 @@
 }
 
 .lightmode {
-	--red: #3eafd5;
-	--white: #5b3b7c;
-	--yellow: #bd846b;
+	--color1: #3eafd5;
+	--color2: #5b3b7c;
+	--color3: #bd846b;
 
 	--bg: #f0f0f0;
 	--fg: #e7e7e7;
@@ -23,7 +23,7 @@
 body {
 	background-color: var(--bg);
 	font-family: 'Space Mono', monospace;
-	color: var(--white);
+	color: var(--color2);
 	transition: all 0.25s ease-out;
 }
 
@@ -55,12 +55,12 @@ form input[type="search"] {
 	font: inherit;
 	margin-left: 12px;
 	width: 95%;
-	color: var(--yellow);
+	color: var(--color3);
 	transition: all 0.2s;
 }	
 
 form label {
-	color: var(--yellow);
+	color: var(--color3);
 	position: absolute;
 	transition: all 0.4s;
 }
@@ -96,13 +96,13 @@ form:focus-within input::placeholder {
 #links 
 li, 
 a {
-	color: var(--white);
+	color: var(--color2);
 	text-decoration: none;
 	transition: all 0.4s;
 }
 
 #links a:hover {
-	color: var(--red);
+	color: var(--color1);
 	transition: all 0.4s;
 }
 
@@ -117,7 +117,7 @@ a {
 }
 
 #datetime {
-  color: var(--red)
+  color: var(--color1)
 }
 
 #art {
@@ -133,7 +133,7 @@ a {
 
 .footer a {
 	text-decoration: none;
-	color: var(--yellow);
+	color: var(--color3);
 }
 
 .footer a:hover {
