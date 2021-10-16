@@ -10,7 +10,7 @@
 #### If that did not work:
 1. Make sure your running your own version of Inception locally
    the url should point to the file saved on your local machine.
-2. If you're just replacing the name make sure line `22` is:
+2. If you're just replacing the name make sure line `21` is:
    `<h1 class="title">Welcome YOUR NAME!</h1>`
 3. If none of the above worked, open an issue [here](https://github.com/antonio-hickey/Inception/issues/new)
    and I will assist you with the issue.
