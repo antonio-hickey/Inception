@@ -4,7 +4,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- For example: My custom image will be named `custom.png` (`jpg` files also work)
 
-3. Open `index.html` and go to line 20.
+3. Open `index.html` and go to line 19.
 4. Replace `default.png` with `custom.png` or `YOURIMAGENAME.png` and save the file, then refresh the page.
 
 
