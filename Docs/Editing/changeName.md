@@ -1,7 +1,7 @@
 ## How to change the name of the welcome message:
 #### This one is easy !
 1. Open the `index.html` file.
-2. On line `22` you will find the welcome message.
+2. On line `21` you will find the welcome message.
 3. Replace `Antonio` with your name or replace the message entirely.
 4. Reload the page, and you should see the change!
 
