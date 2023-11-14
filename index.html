@@ -6,33 +6,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
     <script src="scripts/transitions.js"></script>
-    <script src="scripts/datetime.js"></script>
   </head>
 
   <body>
     <!-- Fade Effect -->
     <svg id="fade"></svg>
-    <script>fadeInPage();</script>
 
     <!-- Main Display -->
     <div id="main">
       <img id="art" src="assets/images/default.png">
       <div id="content">
+        <!-- Welcome message header -->
         <h1 class="title">Welcome Antonio!</h1>
         
-        <div id="datetime">
-          <script type="text/javascript">
-	   				setInterval(fetchDate, 1000);
-	   				fetchDate();
-	  			</script>
-        </div>
+        <!-- Datetime element -->
+        <div id="datetime"></div>
         
         <!-- Search Bar -->
         <div id="search">
           <form autocomplete="off">
             <label for="s" >></label>
 	    			<input autofocus id="s" name="s" type="search" placeholder="Search the web...">
-            <script src="scripts/searchEngine.js"></script>
           </form>
         </div>
 
@@ -84,6 +78,49 @@
         </p>
       </div>
     </div>
-    <script src="scripts/toggleThemes.js"></script>
+    <script>
+      // Run the fade in page effect function
+      fadeInPage();
+
+      // Run the fetchDate function every second
+      setInterval(() => {
+        var str = "";
+        var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+        var clock = new Date();
+      	var now = new Date();
+      
+      	str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+      	document.getElementById("datetime").innerHTML = str;
+      }, 1000);
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Handle theme changing (light/dark mode)
+        const lightModeToggle = document.querySelector('#theme-toggle');
+        lightModeToggle.addEventListener('click', () => {
+        	if (localStorage.getItem('lightMode') !== 'enabled') {
+        	  document.body.classList.add('lightmode');
+        	  localStorage.setItem('lightMode', 'enabled');
+        	} else {
+        	  document.body.classList.remove('lightmode');
+        	  localStorage.setItem('lightMode', null);
+        	}
+        });
+
+      
+        // Handle the search engine querying
+        const searchInput = document.getElementById('s')
+        searchInput.addEventListener('keypress', (event) => {
+          const key = event.key;
+          if (key === 'Enter') {
+            window.open(
+              'https://google.com/search?q=%' + (
+                input.value.split("").map(x=>x.charCodeAt(0)).map(y=>y.toString(16)).join("%")
+              ),
+              '_blank'
+            )
+          };
+        });
+      });
+    </script>
   </body>
 </html>
