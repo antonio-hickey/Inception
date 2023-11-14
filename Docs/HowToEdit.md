@@ -6,7 +6,6 @@
 
 ### Things you may want to change:
 - How to change the art image [see here](https://github.com/antonio-hickey/Inception/blob/main/Docs/Editing/changeArt.md)
-- How to change the music stream [see here](https://github.com/antonio-hickey/Inception/blob/main/Docs/Editing/changeMusic.md)
 - How to change the search engine [see here](https://github.com/antonio-hickey/Inception/blob/main/Docs/Editing/changeSearchEngine.md)
 - How to change the color themes [see here](https://github.com/antonio-hickey/Inception/blob/main/Docs/Editing/changeColors.md)
 - How to change the font's [see here](https://github.com/antonio-hickey/Inception/blob/main/Docs/Editing/changeFont.md)
