@@ -34,6 +34,7 @@
         <div id=links>
 	  			<ul>
 	  			  <a class="subtitle">Frequent</a>
+	  			    <li><a href="https://aws.amazon.com/" target="_blank">Workday</a></li>
 	  			    <li><a href="https://github.com/" target="_blank">GitHub</a></li>	
     			    <li><a href="https://mail.google.com/mail/u/0/#inbox/" target="_blank">gMail</a></li>
 	  			    <li><a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
@@ -114,7 +115,7 @@
           if (key === 'Enter') {
             window.open(
               'https://google.com/search?q=%' + (
-                input.value.split("").map(x=>x.charCodeAt(0)).map(y=>y.toString(16)).join("%")
+                searchInput.value.split("").map(x=>x.charCodeAt(0)).map(y=>y.toString(16)).join("%")
               ),
               '_blank'
             )
