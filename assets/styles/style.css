@@ -27,7 +27,7 @@ body {
 	transition: all 0.25s ease-out;
 }
 
-span:hover {
+.theme-toggle:hover {
   text-decoration: underline;
 }
 
